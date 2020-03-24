@@ -1,27 +1,37 @@
+body {
+	background-color: #eeeeee;
+}
+
 .jumbotron {
-	background-color: #16468c; 
+	background-color: #16468c;
 }
 .jumbotron h1 {
 	font-weight: bold;
 	color: #FFFFFF;
 	text-align: center;
+	font-size: 50px;
 }
 .subtitle {
 	text-align: center;
+	font-size: 28px;
 }
 .vcard {
 	max-width: 80% !important;
 }
 .vcard-inner {
-	background-color: #eeeeee !important;
+	background-color: #FFFFFF !important;
 	border: 1px solid #aaaaaa !important;
+	margin-bottom: 20px;
 }
 .v-card__subtitle {
 	text-align: left !important;
 	color: #000000 !important;
 }
 .v-card__title {
-	padding-bottom: 25px !important;
+	padding-bottom: 50px !important;
+	font-size: 24px;
+	font-weight: bold;
+	color: #16468c;
 }
 .left-button {
 	width: 50%;
