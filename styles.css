@@ -1,0 +1,33 @@
+.jumbotron {
+	background-color: #16468c; 
+}
+.jumbotron h1 {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+}
+.subtitle {
+	text-align: center;
+}
+.vcard {
+	max-width: 80% !important;
+}
+.vcard-inner {
+	background-color: #eeeeee !important;
+	border: 1px solid #aaaaaa !important;
+}
+.v-card__subtitle {
+	text-align: left !important;
+	color: #000000 !important;
+}
+.v-card__title {
+	padding-bottom: 25px !important;
+}
+.left-button {
+	width: 50%;
+	text-align: left;
+}
+.right-button {
+	width: 50%;
+	text-align: right;
+}
