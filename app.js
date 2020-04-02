@@ -7,7 +7,7 @@ Vue.component('story', {
             <v-card-subtitle>{{ subtitle }}</v-card-subtitle>
 
             <v-card-actions>
-                <div class="left-button"><v-btn text>{{ postTime }}</v-btn></div> <div class="right-button"><v-btn class="story" text>{{ headline }} {{ index }}</v-btn></div>
+                <div class="left-button"><v-btn text>{{ postTime }}</v-btn></div> <div class="right-button"><v-btn class="story" text>{{ postTime }} {{ index }}</v-btn></div>
             </v-card-actions>
         </v-card>
     </div>`
