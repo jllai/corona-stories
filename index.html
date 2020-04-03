@@ -30,8 +30,12 @@
                       v-for="story in stories"
                       v-bind:key="story.index"
                       v-bind:headline="story.headline"
-                      v-bind:subtitle="story.subtitle"
-                      v-bind:buttonText="story.postTime">
+                       v-bind:subtitle="story.subtitle"
+		         v-bind:post-time="story.postTime"
+		       v-bind:index="story.index"
+		       v-bind:number="story.number"
+		       >
+		      
                     </story>
                   </v-col>
                 </v-row>
@@ -42,12 +46,12 @@
               class="left-button"
               v-on:click="handleGetPrevious"
             >
-              <v-btn text>Previous 10</v-btn>
+              <v-btn text>Previous</v-btn>
             </div>
             <div class="right-button"
               v-on:click="handleGetNext"
             >
-              <v-btn text>Next 10</v-btn>
+              <v-btn text>Next</v-btn>
             </div>
         </v-row>
       </v-container>
