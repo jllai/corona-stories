@@ -1,20 +1,51 @@
 body {
 	background-color: #eeeeee;
+	font-family: 'Roboto';
 }
 
+
 .jumbotron {
-	background-color: #16468c;
+	border-radius: 0px;
+	background-color: #00274C;
+	margin: 0px;
 }
 .jumbotron h1 {
+	font-family: 'Merriweather';
 	font-weight: bold;
-	color: #FFFFFF;
+	color: #ffcb05;
 	text-align: center;
 	font-size: 50px;
 }
 .subtitle {
-	text-align: center;
-	font-size: 28px;
+	font-family: 'Nunito Sans';
+	margin: 30px 200px;
+	color: white;
+	font-size: 18px;
 }
+
+
+
+
+.navbar {
+	color: #00274C !important;
+	font-family: 'Nunito Sans';
+	text-align: center;
+}
+.bg-light {
+	background-color: #ffcb05 !important;
+}
+
+.nav-pills {
+	color: #00274C !important;
+}
+
+.active {
+	color: #ffcb05 !important;
+}
+
+
+
+
 .vcard {
 	max-width: 80% !important;
 }
@@ -28,6 +59,7 @@ body {
 	color: #000000 !important;
 }
 .v-card__title {
+	font-family: 'Nunito Sans';
 	padding-bottom: 50px !important;
 	font-size: 24px;
 	font-weight: bold;
@@ -41,3 +73,9 @@ body {
 	width: 50%;
 	text-align: right;
 }
+
+
+.footer {
+	width: 100%;
+}
+

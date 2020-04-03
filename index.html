@@ -6,58 +6,85 @@
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito+Sans&display&display=swap" rel="stylesheet">  
   <link rel="stylesheet" type="text/css" href="./styles.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
+
+
 <body>
-  <div class="container">
     <div class="jumbotron">
       <h1 class="display-4">Corona Stories</h1>
+      <div class="subtitle">
+        <p>It has been a few tumultuous and difficult weeks for all of us. Our daily routines, our regularly-scheduled programs, our very lives have been uprooted and halted. Every one of us has experienced moments of fear, moments of hope, moments of uncertainty and moments of support. Every one of us has a story about the way we are coping.</p>
+        <p>We at the University of Michigan would like to hear your story regarding your experience during this pandemic. We hope to use this information to generate knowledge on coping strategies during these uncertain times, especially for populations facing unique challenges relating to income, career continuity, health, and family care — such as students, older adults, lower-income populations, hourly workers, and parents. </p>
+        <p>With your story, we can help people cope better with the impacts of the pandemic. We intend to share this information with policy makers and media organizations to spread these narratives far and wide. For the first 500 valid, 100% completed responses, we will donate $1 per response to the Red Cross. </p>
+      </div>
     </div>
 
-    <div class="subtitle">
-      Some introductory text here.
-    </div>
-    <div id="app">
-      <v-container>
-        <v-row class="text-center">
-            <v-col class="mb-5" cols="12">
-              <v-container>
-                <v-row dense>
-                  <v-col cols="12">
-                    <story
-                      v-for="story in stories"
-                      v-bind:key="story.index"
-                      v-bind:headline="story.headline"
-                       v-bind:subtitle="story.subtitle"
-		         v-bind:post-time="story.postTime"
-		       v-bind:index="story.index"
-		       v-bind:number="story.number"
-		       >
-		      
-                    </story>
-                  </v-col>
-                </v-row>
-              </v-container>
-            </v-col>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav justify-content-center nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Current Life</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Challenges</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hope</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+</ul>
+      </div>
+    </nav>
 
-            <div
-              class="left-button"
-              v-on:click="handleGetPrevious"
-            >
-              <v-btn text>Previous</v-btn>
-            </div>
-            <div class="right-button"
-              v-on:click="handleGetNext"
-            >
-              <v-btn text>Next</v-btn>
-            </div>
-        </v-row>
-      </v-container>
-    </v-app>
+    <div class="container">
+      <div id="app">
+        <v-container>
+          <v-row class="text-center">
+              <v-col class="mb-5" cols="12">
+                <v-container>
+                  <v-row dense>
+                    <v-col cols="12">
+                      <story
+                        v-for="story in stories"
+                        v-bind:key="story.index"
+                        v-bind:headline="story.headline"
+                         v-bind:subtitle="story.subtitle"
+  		         v-bind:post-time="story.postTime"
+  		       v-bind:index="story.index"
+  		       v-bind:number="story.number"
+  		       >
+  		      
+                      </story>
+                    </v-col>
+                  </v-row>
+                </v-container>
+              </v-col>
+
+              <div
+                class="left-button"
+                v-on:click="handleGetPrevious"
+              >
+                <v-btn text>Previous</v-btn>
+              </div>
+              <div class="right-button"
+                v-on:click="handleGetNext"
+              >
+                <v-btn text>Next</v-btn>
+              </div>
+          </v-row>
+        </v-container>
+      </v-app>
+    </div>
   </div>
-</div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
 <!--<script type="text/javascript" src=".\main.js"></script>-->
