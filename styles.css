@@ -20,12 +20,15 @@ body {
 	font-family: 'Nunito Sans';
 	margin: 30px 200px;
 	color: white;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 
 
-
+.nav {
+	width: 100%;
+	padding: 0px 100px;
+}
 .navbar {
 	color: #00274C !important;
 	font-family: 'Nunito Sans';
@@ -34,13 +37,25 @@ body {
 .bg-light {
 	background-color: #ffcb05 !important;
 }
-
-.nav-pills {
+.nav-item {
+	margin: 0px 40px;
+}
+.nav-link {
 	color: #00274C !important;
 }
 
 .active {
 	color: #ffcb05 !important;
+	background-color: #00274C !important;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.sticky + .content {
+  padding-top: 60px;
 }
 
 
@@ -63,7 +78,7 @@ body {
 	padding-bottom: 50px !important;
 	font-size: 24px;
 	font-weight: bold;
-	color: #16468c;
+	color: #00274C;
 }
 .left-button {
 	width: 50%;
@@ -76,6 +91,8 @@ body {
 
 
 .footer {
-	width: 100%;
+	display: flex;
+    justify-content: space-between;
+    padding: 16px;
 }
 
