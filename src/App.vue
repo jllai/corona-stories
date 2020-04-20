@@ -1,0 +1,179 @@
+<template>
+  <div id="app">
+    <Stories/>
+  </div>
+</template>
+
+<script>
+import Vue from 'vue'
+import Vuetify from 'vuetify'
+import Stories from './components/Stories'
+
+Vue.use(Vuetify)
+
+export default {
+  name: 'App',
+  components: {
+    Stories
+  }
+}
+</script>
+
+<style>
+body {
+	background-color: #eeeeee;
+	font-family: 'Roboto';
+}
+
+
+.jumbotron {
+	border-radius: 0px;
+	background-color: #00274C;
+	margin: 0px;
+}
+.jumbotron h1 {
+	font-family: 'Merriweather';
+	font-weight: bold;
+	color: #ffcb05;
+	text-align: center;
+	font-size: 50px;
+}
+.subtitle {
+	font-family: 'Nunito Sans';
+	margin: 30px 200px;
+	color: white;
+	font-size: 16px;
+}
+#sub-mobile {
+	display: none;
+}
+i {
+	color: #ffcb05;
+}
+.btn {
+	border-width: 0px;
+	background-color: #ffcb05;
+	font-weight: 800;
+}
+.btn a {
+	color: #00274C;
+}
+.btn a:hover{
+	text-decoration: none;
+}
+.btn:hover {
+	background-color: gold;
+}
+.share {
+	text-align: center;
+}
+.share p {
+	font-family: 'Merriweather';
+}
+
+
+
+
+.nav {
+	width: 100%;
+	padding: 0px 100px;
+}
+.navbar {
+	color: #00274C !important;
+	font-family: 'Nunito Sans';
+	text-align: center;
+}
+.bg-light {
+	background-color: #ffcb05 !important;
+}
+.nav-item {
+	margin: 0px 40px;
+}
+.nav-link {
+	color: #00274C !important;
+	font-weight: 800;
+}
+
+.active {
+	color: #ffcb05 !important;
+	background-color: #00274C !important;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.vcard {
+	max-width: 80% !important;
+}
+.vcard-inner {
+	background-color: #FFFFFF !important;
+	border: 1px solid #aaaaaa !important;
+	margin-bottom: 20px;
+}
+.v-card__subtitle {
+	text-align: left !important;
+	color: #000000 !important;
+}
+.v-card__title {
+	font-family: 'Nunito Sans';
+	padding-bottom: 50px !important;
+	font-size: 24px;
+	font-weight: bold;
+	color: #00274C;
+}
+.left-button {
+	width: 50%;
+	text-align: left;
+}
+.right-button {
+	width: 50%;
+	text-align: right;
+}
+.left-button button, .right-button button {
+	background-color: #00274C;
+}
+.v-btn__content {
+	color: #ffcb05;
+}
+
+
+
+footer {
+	background-color: #00274C;
+}
+.footer-copyright {
+	color: lightgrey;
+}
+
+
+
+
+@media only screen and (max-width: 1300px) {
+	#sub-mobile {
+		display: block;
+	}
+	#sub-expand {
+		display: none;
+	}
+	.subtitle {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.jumbotron h1 {
+		font-size: 36px;
+	}
+	.subtitle {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+}
+</style>
