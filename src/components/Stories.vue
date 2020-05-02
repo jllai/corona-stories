@@ -36,26 +36,26 @@ export default {
 }
 
 // Add data to Firebase database.
-export default {
-  name: 'Stories',
-  data () {
-    return {
-      stories: [],
-      title: '',      // <-- New story title
-      createdAt: ''      // <-- New story creation date
-    }
-  },
-  firestore () {
-    return {
-      stories: db.collection('stories').orderBy('createdAt')
-    }
-  },
-  methods: { 
-    addStory (title, createdAt) { 
-      const createdAt = new Date()
-      db.collection('stories').add({ title, createdAt })
-    }
-  }
-}
+// export default {
+//   name: 'Stories',
+//   data () {
+//     return {
+//       stories: [],
+//       title: '',      // <-- New story title
+//       createdAt: ''      // <-- New story creation date
+//     }
+//   },
+//   firestore () {
+//     return {
+//       stories: db.collection('stories').orderBy('createdAt')
+//     }
+//   },
+//   methods: { 
+//     addStory (title, createdAt) { 
+//       const createdAt = new Date()
+//       db.collection('stories').add({ title, createdAt })
+//     }
+//   }
+// }
 
 </script>
